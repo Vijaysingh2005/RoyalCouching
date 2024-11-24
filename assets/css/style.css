@@ -1,3 +1,4 @@
+
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.12,
@@ -190,7 +191,7 @@ a:hover {
 
 #cara-pic {
     height: 100%;
-    background-image: url("../img/cara1.webp");
+    background-image: url("../img/royal-img.webp");
     background-size: cover;
     background-position: 50% 10%;
 }
