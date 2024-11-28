@@ -187,14 +187,41 @@ a:hover {
 .cara-pic-wrapper {
     height: 100%;
     min-height: 350px;
+    /* background-color: red; */
 }
 
 #cara-pic {
-    height: 100%;
-    background-image: url("../img/royal-img.webp");
+    height: 50%;
+    background-image: url("../img/lokendra_singh.png");
     background-size: cover;
     background-position: 50% 10%;
 }
+
+/* For tablets and small screens (max width: 768px) */
+@media (max-width: 768px) {
+    #cara-pic {
+        height: 80%; /* Adjust height for smaller screens */
+        background-position: 50% 20%; /* Slightly adjust positioning */
+    }
+}
+
+/* For mobile devices (max width: 480px) */
+@media (max-width: 480px) {
+    #cara-pic {
+        width: 338px;
+        height: 95%; /* Further reduce height */
+        background-position: 50% 30%; /* Center image more */
+    }
+}
+
+/* For large screens (min width: 1200px) */
+@media (min-width: 1200px) {
+    #cara-pic {
+        height: 95%;
+        width: 369px; 
+    }
+}
+
 
 #cara-about-pic-1 {
     height: 100%;
@@ -583,5 +610,68 @@ hr {
 
     #teamsTestimonialsCarousel {
         height: 260px;
+    }
+}
+
+.brandingLogo{
+    width: 800px;
+    /* background-color: red; */
+    margin-right: 24px;
+    margin: 8px 236px;
+    font-size: 16px; 
+   .vijay{  
+       display: inline-block;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        background-color: var(--dark-green);
+        color: white;
+        border-color: var(--dark-green);
+   }
+  
+}
+.brandingLogo {
+    display: flex;
+    width: 100%; /* Default to full width for small screens */
+    max-width: 800px; /* Restrict maximum width */
+    margin: 0; /* Simplify margin settings */
+    font-size: 28px; /* Slightly smaller font size for smaller devices */
+}
+
+/* For tablets and medium-sized screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .brandingLogo {
+        width: 90%; /* Slightly smaller width for better alignment */
+        margin-right: 16px; /* Adjust spacing */
+        font-size: 24px; /* Scale font size down */
+    }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .brandingLogo {
+        width: 100%; /* Full width for small screens */
+        font-size: 20px; /* Smaller font size for readability */
+    }
+}
+
+/* For large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .brandingLogo {
+        width: 800px; /* Full width for larger screens */
+        font-size: 34px; /* Original font size */
     }
 }
